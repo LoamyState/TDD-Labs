@@ -34,3 +34,44 @@ final class TDD_LabTests: XCTestCase {
     }
 
 }
+
+class TestPerson: XCTestCase {
+    func testFullName() {
+        let person = Person(firstName: "John", lastName: "Doe", age: 0)
+        XCTAssertEqual(person.fullName, "John Doe")
+    }
+    
+    func testAge() {
+        let person = Person(firstName: "Stevie", lastName: "Wonder", age: 39)
+        XCTAssertEqual(person.age, 39)
+    }
+    
+    func testBirthday() {
+        var person = Person(firstName: "Stevie", lastName: "Wonder", age: 39)
+        
+        person.birthday()
+        XCTAssertEqual(person.age, 40)
+    }
+    
+    func testIsAdult() {
+        let person1 = Person(firstName: "Stevie", lastName: "Wonder", age: 39)
+        let person2 = Person(firstName: "Jimmy", lastName: "Page", age: 9)
+        
+        XCTAssertTrue(person1.isAdult)
+        XCTAssertFalse(person2.isAdult)
+    }
+    
+    func testHasPet() {
+        var person = Person(firstName: "Stevie", lastName: "Wonder", age: 39)
+
+        person.buyPet(pet: Pet(name: "Doggy", type: "Dog"))
+        
+        XCTAssertNotNil(person.pet)
+    }
+    
+    func testToss() {
+        var person = Person(firstName: "Stevie", lastName: "Wonder", age: 39)
+        
+        XCTAssertThrowsError(try person.toss("Baseball"))
+    }
+}

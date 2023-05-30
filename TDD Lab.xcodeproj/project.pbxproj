@@ -16,6 +16,8 @@
 		6383567A2A0D321D009421E7 /* TDD_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638356792A0D321D009421E7 /* TDD_LabTests.swift */; };
 		638356842A0D321D009421E7 /* TDD_LabUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638356832A0D321D009421E7 /* TDD_LabUITests.swift */; };
 		638356862A0D321D009421E7 /* TDD_LabUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638356852A0D321D009421E7 /* TDD_LabUITestsLaunchTests.swift */; };
+		638356942A0D3272009421E7 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 638356922A0D326E009421E7 /* Person.swift */; };
+		6383570D2A127F91009421E7 /* TDD_FakeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383570C2A127F90009421E7 /* TDD_FakeTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		6383567F2A0D321D009421E7 /* TDD LabUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "TDD LabUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		638356832A0D321D009421E7 /* TDD_LabUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_LabUITests.swift; sourceTree = "<group>"; };
 		638356852A0D321D009421E7 /* TDD_LabUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_LabUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		638356922A0D326E009421E7 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Person.swift; path = "TDD Lab/Person.swift"; sourceTree = SOURCE_ROOT; };
+		6383570C2A127F90009421E7 /* TDD_FakeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TDD_FakeTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,7 @@
 				638356622A0D3218009421E7 /* AppDelegate.swift */,
 				638356642A0D3218009421E7 /* SceneDelegate.swift */,
 				638356662A0D3218009421E7 /* ViewController.swift */,
+				638356922A0D326E009421E7 /* Person.swift */,
 				638356682A0D3218009421E7 /* Main.storyboard */,
 				6383566B2A0D321C009421E7 /* Assets.xcassets */,
 				6383566D2A0D321C009421E7 /* LaunchScreen.storyboard */,
@@ -114,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				638356792A0D321D009421E7 /* TDD_LabTests.swift */,
+				6383570C2A127F90009421E7 /* TDD_FakeTests.swift */,
 			);
 			path = "TDD LabTests";
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 			files = (
 				638356672A0D3218009421E7 /* ViewController.swift in Sources */,
 				638356632A0D3218009421E7 /* AppDelegate.swift in Sources */,
+				638356942A0D3272009421E7 /* Person.swift in Sources */,
 				638356652A0D3218009421E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +276,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6383567A2A0D321D009421E7 /* TDD_LabTests.swift in Sources */,
+				6383570D2A127F91009421E7 /* TDD_FakeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
